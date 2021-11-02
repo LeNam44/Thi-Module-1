@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function solveEquation(a, b) {
+            if (a === 0 && b === 0){
+                alert("Phương trình vô số nghiệm");
+            } else if (a === 0 && b !== 0){
+                alert("Phương trình vô nghiệm");
+            } else {
+                alert("Phương trình có nghiệm x = " + (-b / a));
+            }
+        }
+        solveEquation(5,8)
+    </script>
+</body>
+</html>

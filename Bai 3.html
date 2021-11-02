@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function countVowel(string) {
+            let vowel  = ['a', 'o', 'e', 'u', 'i', 'A', 'O', 'E', 'U', 'I'];
+            let count = 0;
+            for (let i = 0; i < string.length ; i++) {
+                // Kiểm tra xem từng phần tử của mảng string có nằm trong mảng vowel không
+                if (vowel.indexOf(string[i]) !== -1) {
+                    count += 1;
+                }
+            }
+            alert("Số ký tự nguyên âm trong chuỗi này là " + count)
+        }
+        let inputString = prompt("Nhập vào chuỗi bất kỳ")
+        countVowel(inputString)
+    </script>
+</body>
+</html>

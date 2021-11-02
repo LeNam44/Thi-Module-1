@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <script>
+        function findIndex(x, arr) {
+            for (let i = 0; i < arr.length; i++) {
+                if (x === arr[i]) {
+                    alert("Phần tử cần tìm nằm trong mảng arr ở vị trí index là " + i);
+                }
+            }
+        }
+        let array = [1,6,4,5,3,57,12,5,13]
+        let number1 = +prompt("Nhập phần tử cần tìm vị trí")
+        findIndex(number1, array);
+
+        function checkInclude(y, arr) {
+            let check;
+            for (let i = 0; i < arr.length; i++) {
+                if (y === arr[i]) {
+                    document.write("Số nguyên " + y + " nằm trong mảng")
+                    check = true
+                }
+            }
+            if (!check) {
+                document.write("Số nguyên " + y + " không nằm trong mảng")
+            }
+        }
+        let number2 = +prompt("Nhập phần tử cần kiểm tra tồn tại")
+        checkInclude(number2, array)
+    </script>
+</body>
+</html>
